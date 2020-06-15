@@ -64,7 +64,7 @@ if(trim($name_register) == '') {
 }
 
 //$address = "HERE your email address";
-$address = "test@domain.com";
+$address = "leenamoo@tk101global.com";
 
 
 // Below the subject of the email
@@ -85,8 +85,8 @@ $headers .= "Content-Transfer-Encoding: quoted-printable" . PHP_EOL;
 
 $user = "$email_register";
 $usersubject = "Thank You";
-$userheaders = "From: info@findoctor.com\n";
-$usermessage = "Thank you for register to Findoctor. We will reply shortly!";
+$userheaders = "From: leenamoo@tk101global.com\n";
+$usermessage = "Thank you for registering at MaskStudy. We will reply shortly!";
 mail($user,$usersubject,$usermessage,$userheaders);
 
 if(mail($address, $e_subject, $msg, $headers)) {
